@@ -1,0 +1,151 @@
+/* SideDrawer Container */
+.sideDrawer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 10px 20px;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.searchBtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.searchBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Drawer */
+.drawer {
+    position: fixed;
+    left: -350px;  /* Off-screen by default */
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    z-index: 1000;
+    box-shadow: 2px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: left 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 10px 10px 0;
+}
+
+.drawer.open {
+    left: 0;  /* Slide in when open */
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.drawer-header h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.closeBtn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Drawer Content */
+.drawer-content {
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.drawer-content input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 16px;
+}
+
+.drawer-content input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.searchGoBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.searchGoBtn:hover {
+    background-color: #e64a19;
+}
+
+.spinner {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Avatar and Logout Buttons */
+.image-button {
+    background: linear-gradient(135deg, #1515b6, #073b70);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+}
+
+.image-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.clearBtn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.clearBtn:hover {
+    background-color: #d32f2f;
+}

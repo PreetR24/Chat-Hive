@@ -1,0 +1,27 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skeleton {
+    height: 45px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Animation for the skeleton loading effect */
+@keyframes pulse {
+    0% {
+        background-color: #e0e0e0;
+    }
+
+    50% {
+        background-color: #4f2ef8;
+    }
+
+    100% {
+        background-color: #e0e0e0;
+    }
+}

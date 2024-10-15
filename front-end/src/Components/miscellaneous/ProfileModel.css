@@ -1,0 +1,67 @@
+/* Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for better contrast */
+    backdrop-filter: blur(8px); /* Blurring the background */
+    transition: opacity 0.3s ease;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto;
+    padding: 40px; /* Increased padding for spacious feel */
+    border-radius: 15px; /* Rounded corners for softness */
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Maximum width for larger screens */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    position: relative;
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(30px); /* Slide from above */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #8243f8; /* Bold color for visibility */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #2f0167; /* Change color on hover for emphasis */
+}
+
+/* Modal Body */
+.modal-body {
+    text-align: center; /* Centered text for aesthetic appeal */
+    margin-top: 30px;
+}
+
+.modal-body p {
+    font-size: 24px; /* Larger font size for readability */
+    color: #0202e8; /* Dark text for contrast */
+    font-family: "Segoe UI", sans-serif; /* Clean font */
+}
