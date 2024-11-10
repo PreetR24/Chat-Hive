@@ -16,7 +16,7 @@ const ProfileModel = ({ user, children }) => {
             <span onClick={openModal}>{children}</span>
         ) : (
             <button style={{ display: "flex" }} onClick={openModal} >
-            View Profile
+            {/* View Profile */}
             </button>
         )}
 

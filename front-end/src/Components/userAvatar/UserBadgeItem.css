@@ -1,0 +1,22 @@
+.user-badge {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: purple;
+    color: white;
+    font-size: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.admin-badge {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.close-icon {
+    margin-left: 8px;
+    font-size: 10px;
+    cursor: pointer;
+}

@@ -66,7 +66,6 @@ const allUsers = AsyncHandler(async (req, res) => {
         ...user._doc,
         pic: user.pic ? user.pic.toString('base64') : null
     }));
-    console.log(formattedUsers)
     res.send(formattedUsers);
 });
 

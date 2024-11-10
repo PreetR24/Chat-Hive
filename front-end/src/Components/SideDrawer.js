@@ -133,7 +133,7 @@ function SideDrawer() {
                     <ChatLoading />
                 ) : (
                     searchResult?.map((user) => (
-                    <UserListItem key={user._id} user={user} handleFunction={() => accessChat(user._id)} />
+                        <UserListItem key={user._id} user={user} handleFunction={() => accessChat(user._id)} />
                     ))
                 )}
                 {loadingChat && <div className="spinner">Loading...</div>}
